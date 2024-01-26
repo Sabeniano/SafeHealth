@@ -1,0 +1,194 @@
+body { /* baggrund farve */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+}
+
+.ContainerForside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;} 
+    
+.BoxForside {
+    text-align: center;
+    padding: 0px;
+    box-shadow: 1px 1px 9px 2px rgba(5, 0, 0, 0.5); 
+    border-radius: 500px;
+    background-color: orange;
+} 
+
+.IconForside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* Center the div within the flex column */
+    width: fit-content; /* Ensures it takes only as much width as needed */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-color: transparent;
+    height: 100px;
+    width: 100px; 
+}
+
+.FirstButtonForside {
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    background-color: lightblue;
+    color: rgb(126, 0, 0);
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.LogIn-popup {
+    display: none;
+    position: fixed;
+}
+
+.LogIn-container{
+    max-width: 300px;
+    padding: 10px;
+    background-color:rgb(11, 197, 197);
+}
+
+.LogIn-container input[type=text], .LogIn-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 20px 0 22px 0;
+    border: fixed;
+    background:rgb(255, 255, 255)
+}
+
+.LogIn-container .btn {
+    background-color: #f32805;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.LogIn-container .cancel {
+    background-color:red;
+}
+
+.LogIn-container .btn:hover, .open-button:hover{
+    opacity: 1;
+}   
+
+.FirstButtonForside:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgb(11, 197, 197)
+}
+
+
+
+.SecondButtonForside {
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    background-color: lightblue;
+    color: rgb(209, 14, 14);
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.SecondButtonForside:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgb(11, 197, 197)
+}
+
+.SignUp-popup {
+    display: none;
+    position: fixed;
+}
+
+.SignUp-container{
+    max-width: 300px;
+    padding: 10px;
+    background-color:rgb(11, 197, 197);
+}
+
+.SignUp-container input[type=text], .SignUp-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 20px 0 22px 0;
+    border: fixed;
+    background:rgb(255, 255, 255)
+}
+
+.SignUp-container .btn {
+    background-color: #f32805;
+    color: white
+    padding 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.SignUp-container .cancel {
+    background-color:red;
+}
+
+.SignUp-container .btn:hover, .open-button:hover{
+    opacity: 1;
+}   
+  .navbar{
+        background-color: rgb(255, 0, 0);
+        font-family: calibri;
+        padding-right: 15px;
+    }
+
+    .navdiv{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a{
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+    li a{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+    }
+
+
+/* MAP AND PROFILE */
+    .profile-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .profile-info {
+        width: 20%; /* Adjust the width as needed */
+        padding: 20px;
+        /* Additional styling as needed */
+    }
+    
+    .map-container {
+        width: 80%; /* Adjust the width as needed */
+        height: 400px; /* Adjust the height as needed */
+    }
+    
+    #map {
+        width: 100%;
+        height: 100%;
+    }

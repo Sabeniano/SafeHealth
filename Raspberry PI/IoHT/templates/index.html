@@ -1,0 +1,26 @@
+{% extends "navbar.html" %}
+
+{% block title %}
+Rødovre Plejehjem
+{% endblock %}
+
+{% block content %}
+<div class="ContainerForside">
+    <div class="LogIn" id="MinLoginupPopup"> 
+        <form action="/index" method="post" class="LogIn-container">
+            <div class="IconForside">
+                <img src="https://static.thenounproject.com/png/4778723-200.png" alt="Icon" height="100">
+            </div>
+            <label for="produkt_id"><b>Produkt ID</b></label> 
+            <input type="text" placeholder="Skriv Produkt ID" id="produkt_id" name="produkt_id" required> 
+
+            <!-- Display error message if it exists -->
+            {% if error %}
+            <p class="error-message">{{ error }}</p>
+            {% endif %}
+
+            <button type="submit" class="btn" value="Log ind">Søg</button>
+        </form>
+    </div> 
+</div>
+{% endblock %}
